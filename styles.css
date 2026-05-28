@@ -90,41 +90,48 @@ body {
     color: var(--color-gray);
 }
 
-.author-info { 
-    display: flex; 
-    align-items: center; 
-    margin-top: 0.9375rem; 
+.author-link {
+    display: flex;
+    align-items: center;
     gap: 0.9375rem;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 999px;
+    padding: 0.25rem;
+    transition: background-color 0.2s ease;
 }
 
-.avatar { 
-    width: 2.5rem; 
-    height: 2.5rem; 
-    border-radius: 50%; 
-    transition: transform 0.3s ease; 
-    cursor: pointer; 
+.author-link:hover .avatar {
+    transform: scale(1.1);
 }
 
-.avatar:hover { 
-    transform: scale(1.1); 
+.author-link:hover .author {
+    color: var(--color-accent-hover);
 }
 
-.avatar:active { 
-    transform: scale(0.9); 
+.author-link:active .avatar {
+    transform: scale(0.95);
 }
 
-.author { 
-    font-size: 0.9rem; 
+.author-link:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+}
+
+.author {
+    font-size: 0.9rem;
     font-weight: 750;
-    cursor: pointer; 
 }
 
-.author:hover { 
-    color: var(--color-accent-hover); 
-}
-
-.author:active { 
-    color: var(--color-accent-active); 
+.author-link:focus-visible .avatar {
+    transform: scale(1.05);
 }
 
 .attribution { 
