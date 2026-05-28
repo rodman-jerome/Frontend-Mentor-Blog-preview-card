@@ -1,6 +1,17 @@
+:root {
+    --color-accent: hsl(47, 88%, 63%);
+    --color-accent-hover: hsl(47, 88%, 50%);
+    --color-accent-active: rgb(100, 81, 6);
+
+    --color-white: hsl(0, 0%, 100%);
+    --color-gray: hsl(0, 0%, 42%);
+    --color-link: hsl(228, 45%, 44%);
+    --color-black: black;
+}
+
 body { 
     font-family: "Outfit", sans-serif;
-    background-color: hsl(47, 88%, 63%); 
+    background-color: var(--color-accent); 
     display: flex; 
     flex-direction: column;
     justify-content: center; 
@@ -10,44 +21,43 @@ body {
 }
 
 .container { 
-    border: 1.5px solid black;
-    background-color: hsl(0, 0%, 100%); 
-    border-radius: 20px; 
-    box-shadow: 8px 8px 0 black;
-    max-width: 338px; 
-    padding: 20px; 
+    border: 0.09375rem solid var(--color-black);
+    background-color: var(--color-white); 
+    border-radius: 1.25rem; 
+    box-shadow: 0.5rem 0.5rem 0 var(--color-black);
+    max-width: 21.125rem; 
+    padding: 1.25rem; 
     text-align: left; 
 }
 
 .article-image { 
     width: 100%; 
-    border-radius: 10px; 
+    border-radius: 0.625rem; 
 }
 
 .category { 
     font-size: 1rem;
     font-weight: 750; 
-    background-color: hsl(47, 88%, 63%); 
+    background-color: var(--color-accent); 
     display: inline-block;
-    padding: 5px 10px; 
-    border-radius: 5px;
-    margin-top: 20px;
-    cursor: pointer; 
+    padding: 0.3125rem 0.625rem; 
+    border-radius: 0.3125rem;
+    margin-top: 1.25rem;
+    cursor: pointer;
 }
 
 .category:hover { 
-    background-color: hsl(47, 88%, 50%); 
+    background-color: var(--color-accent-hover);  
 }
 
 .category:active { 
-    background-color: rgb(100, 81, 6); 
+    background-color: var(--color-accent-active); 
 }
 
 .category:focus { 
-    outline: 2px solid hsl(47, 88%, 63%); 
-    outline-offset: 4px; 
+    outline: 0.125rem solid var(--color-accent); 
+    outline-offset: 0.25rem; 
 }
-
 
 .date { 
     font-size: 0.9rem; 
@@ -56,41 +66,40 @@ body {
 
 .title { 
     font-size: 1.5rem;
-    color: black;
+    color: var(--color-black);
     font-weight: 750; 
-    margin-top: 15px; 
-    cursor: pointer; 
+    margin-top: 0.9375rem; 
 }
 
 .title:hover { 
-    color: hsl(47, 88%, 50%); 
+    color: var(--color-accent-hover); 
+    cursor: pointer; 
 }
 
 .title:active { 
-    color: black; 
+    color: var(--color-black); 
 }
 
 .title:focus { 
-    outline: 2px solid black; 
-    outline-offset: 4px; 
+    outline: 0.125rem solid var(--color-black); 
+    outline-offset: 0.25rem; 
 }
-
 
 .description { 
     font-size: 1rem; 
-    color: hsl(0, 0%, 42%);
+    color: var(--color-gray);
 }
 
 .author-info { 
     display: flex; 
     align-items: center; 
-    margin-top: 15px; 
-    gap: 15px;
+    margin-top: 0.9375rem; 
+    gap: 0.9375rem;
 }
 
 .avatar { 
-    width: 40px; 
-    height: 40px; 
+    width: 2.5rem; 
+    height: 2.5rem; 
     border-radius: 50%; 
     transition: transform 0.3s ease; 
     cursor: pointer; 
@@ -105,38 +114,37 @@ body {
 }
 
 .author { 
-    font-size: .9rem; 
+    font-size: 0.9rem; 
     font-weight: 750;
     cursor: pointer; 
 }
 
 .author:hover { 
-    color: hsl(47, 88%, 50%); 
+    color: var(--color-accent-hover); 
 }
 
 .author:active { 
-    color: hsl(47, 88%, 40%); 
+    color: var(--color-accent-active); 
 }
 
 .attribution { 
     font-size: 0.6875rem; 
     text-align: center; 
-    margin-top: 20px;
+    margin-top: 1.25rem;
 }
 
 .attribution a { 
-    color: hsl(228, 45%, 44%); 
+    color: var(--color-link); 
 }
 
 .attribution img { 
-    width: 16px;
+    width: 1rem;
     height: auto;
     vertical-align: middle; 
-    margin-right: 5px; 
+    margin-right: 0.3125rem; 
 }
 
-
-@media (max-width: 400px) { 
+@media (max-width: 25rem) { 
     .container { 
         max-width: 90%; 
     }
