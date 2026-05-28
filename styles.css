@@ -56,7 +56,7 @@ body {
 
 .category:focus { 
     outline: 0.125rem solid var(--color-accent); 
-    outline-offset: 0, 0.25rem, or 4px; 
+    outline-offset: 0, 0.25rem; 
 }
 
 .date { 
