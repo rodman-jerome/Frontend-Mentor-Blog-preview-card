@@ -101,6 +101,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
+/* Hover feedback */
 .author-link:hover .avatar {
     transform: scale(1.1);
 }
@@ -109,15 +110,18 @@ body {
     color: var(--color-accent-hover);
 }
 
+/* Active click feedback */
 .author-link:active .avatar {
     transform: scale(0.95);
 }
 
+/* Keyboard accessibility (important part) */
 .author-link:focus-visible {
     outline: 2px solid var(--color-accent);
     outline-offset: 4px;
 }
 
+/* Avatar styling */
 .avatar {
     width: 2.5rem;
     height: 2.5rem;
@@ -125,6 +129,7 @@ body {
     transition: transform 0.2s ease;
 }
 
+/* Author text */
 .author {
     font-size: 0.9rem;
     font-weight: 750;
