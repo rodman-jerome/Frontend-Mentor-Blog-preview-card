@@ -1,0 +1,144 @@
+body { 
+    font-family: "Outfit", sans-serif;
+    background-color: hsl(47, 88%, 63%); 
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.container { 
+    border: 1.5px solid black;
+    background-color: hsl(0, 0%, 100%); 
+    border-radius: 20px; 
+    box-shadow: 8px 8px 0 black;
+    max-width: 338px; 
+    padding: 20px; 
+    text-align: left; 
+}
+
+.article-image { 
+    width: 100%; 
+    border-radius: 10px; 
+}
+
+.category { 
+    font-size: 1rem;
+    font-weight: 750; 
+    background-color: hsl(47, 88%, 63%); 
+    display: inline-block;
+    padding: 5px 10px; 
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.category:hover { 
+    background-color: hsl(47, 88%, 50%); 
+    cursor: pointer; 
+}
+
+.category:active { 
+    background-color: rgb(100, 81, 6); 
+}
+
+.category:focus { 
+    outline: 2px solid hsl(47, 88%, 63%); 
+    outline-offset: 4px; 
+}
+
+
+.date { 
+    font-size: 0.9rem; 
+    margin-top: 10px; 
+}
+
+.title { 
+    font-size: 1.5rem;
+    color: hsl(47, 88%, 63%);
+    font-weight: 750; 
+    margin-top: 15px; 
+}
+
+.title:hover { 
+    color: hsl(47, 88%, 50%); 
+    cursor: pointer; 
+}
+
+.title:active { 
+    color: black; 
+}
+
+.title:focus { 
+    outline: 2px solid black; 
+    outline-offset: 4px; 
+}
+
+
+.description { 
+    font-size: 1rem; 
+    color: hsl(0, 0%, 42%);
+}
+
+.author-info { 
+    display: flex; 
+    align-items: center; 
+    margin-top: 15px; 
+    gap: 15px;
+}
+
+.avatar { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+}
+
+.avatar:hover { 
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.avatar:active { 
+    transform: scale(0.9); 
+}
+
+.author { 
+    font-size: .9rem; 
+    font-weight: 750;
+}
+
+.author:hover { 
+    color: hsl(47, 88%, 50%); 
+    cursor: pointer; 
+}
+
+.author:active { 
+    color: hsl(47, 88%, 40%); 
+}
+
+.attribution { 
+    font-size: 0.6875rem; 
+    text-align: center; 
+    margin-top: 20px;
+  text-align: center;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+.attribution img { 
+    width: 16px;
+    height: auto;
+    vertical-align: middle; 
+    margin-right: 5px; 
+}
+
+
+@media (max-width: 400px) { 
+    .container { 
+        max-width: 90%; 
+    }
+}
