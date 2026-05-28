@@ -32,11 +32,11 @@ body {
     padding: 5px 10px; 
     border-radius: 5px;
     margin-top: 20px;
+    cursor: pointer; 
 }
 
 .category:hover { 
     background-color: hsl(47, 88%, 50%); 
-    cursor: pointer; 
 }
 
 .category:active { 
@@ -59,11 +59,11 @@ body {
     color: black;
     font-weight: 750; 
     margin-top: 15px; 
+    cursor: pointer; 
 }
 
 .title:hover { 
     color: hsl(47, 88%, 50%); 
-    cursor: pointer; 
 }
 
 .title:active { 
@@ -92,12 +92,12 @@ body {
     width: 40px; 
     height: 40px; 
     border-radius: 50%; 
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
 }
 
 .avatar:hover { 
     transform: scale(1.1); 
-    transition: transform 0.3s ease; 
-    cursor: pointer; 
 }
 
 .avatar:active { 
@@ -107,11 +107,11 @@ body {
 .author { 
     font-size: .9rem; 
     font-weight: 750;
+    cursor: pointer; 
 }
 
 .author:hover { 
     color: hsl(47, 88%, 50%); 
-    cursor: pointer; 
 }
 
 .author:active { 
